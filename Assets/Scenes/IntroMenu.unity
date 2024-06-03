@@ -629,7 +629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectToToggle: {fileID: 2061599201}
-  ResetSelectionAfterClick: 0
+  ResetSelectionAfterClick: 1
 --- !u!1 &904770611
 GameObject:
   m_ObjectHideFlags: 0
