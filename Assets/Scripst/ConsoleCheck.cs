@@ -1,44 +1,41 @@
 using UnityEngine;
+using TMPro;
 
 public class ConsoleCheck : MonoBehaviour
 {
+    public TextMeshProUGUI pcText;
+    public TextMeshProUGUI xboxText;
+
     void Start()
     {
+        pcText.gameObject.SetActive(false);
+        xboxText.gameObject.SetActive(false);
         CheckConsoleType();
     }
 
     void CheckConsoleType()
     {
 #if UNITY_EDITOR
-        // Verificar en el editor de Unity
         UnityEditor.BuildTarget buildTarget = UnityEditor.EditorUserBuildSettings.activeBuildTarget;
-        if (buildTarget == UnityEditor.BuildTarget.XboxOne)
+        if (buildTarget == UnityEditor.BuildTarget.StandaloneWindows ||
+            buildTarget == UnityEditor.BuildTarget.StandaloneWindows64)
         {
-            Debug.Log("El juego está corriendo en una consola Xbox (en el editor de Unity).");
-        }
-        else if (buildTarget == UnityEditor.BuildTarget.StandaloneWindows ||
-                 buildTarget == UnityEditor.BuildTarget.StandaloneWindows64)
-        {
-            Debug.Log("El juego está corriendo en PC (en el editor de Unity).");
+            pcText.gameObject.SetActive(true);
         }
         else
         {
-            Debug.Log("El juego está corriendo en otra plataforma (en el editor de Unity).");
+            xboxText.gameObject.SetActive(true);
         }
 #else
-        // Verificar en tiempo de ejecución
-        if (Application.platform == RuntimePlatform.XboxOne)
+        if (Application.platform == RuntimePlatform.WindowsPlayer ||
+            Application.platform == RuntimePlatform.WindowsEditor)
         {
-            Debug.Log("El juego está corriendo en una consola Xbox.");
+            pcText.gameObject.SetActive(true);
         }
-        else if (Application.platform == RuntimePlatform.WindowsPlayer || 
-                 Application.platform == RuntimePlatform.WindowsEditor)
+        else if (Application.platform == RuntimePlatform.XboxOne ||
+                 Application.platform == RuntimePlatform.XboxSeriesX)
         {
-            Debug.Log("El juego está corriendo en PC.");
-        }
-        else
-        {
-            Debug.Log("El juego está corriendo en otra plataforma.");
+            xboxText.gameObject.SetActive(true);
         }
 #endif
     }
