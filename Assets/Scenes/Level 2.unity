@@ -31659,7 +31659,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 4c5b5877421d10f489d3b77a4bd7bfde, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 2d9fa9478f2469c4981803e5e560a548, type: 2}
 --- !u!4 &1402848969
 Transform:
   m_ObjectHideFlags: 0
@@ -35620,6 +35620,7 @@ GameObject:
   - component: {fileID: 1541639617}
   - component: {fileID: 1541639619}
   - component: {fileID: 1541639618}
+  - component: {fileID: 1541639620}
   m_Layer: 0
   m_Name: BR WHEEL.006
   m_TagString: Untagged
@@ -35692,6 +35693,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541639616}
   m_Mesh: {fileID: 7106754760135024890, guid: ee46dc638cee4314b9f2874c4a26ec0a, type: 3}
+--- !u!65 &1541639620
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541639616}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.4630165, y: 3.732524, z: 12.110092}
+  m_Center: {x: -1.4283047, y: 1.2284758, z: 4.072733}
 --- !u!1 &1552896434
 GameObject:
   m_ObjectHideFlags: 0
@@ -44842,7 +44864,6 @@ GameObject:
   - component: {fileID: 1896158919}
   - component: {fileID: 1896158924}
   - component: {fileID: 1896158923}
-  - component: {fileID: 1896158925}
   m_Layer: 0
   m_Name: GAS STATION
   m_TagString: Untagged
@@ -45041,27 +45062,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.3658676, y: 8.032581, z: 2.2172241}
   m_Center: {x: -11.109329, y: 3.3490157, z: -7.750366}
---- !u!65 &1896158925
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1896158915}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 48.20224, y: 32.41359, z: 38.291183}
-  m_Center: {x: 0.71554947, y: 15.53952, z: 0.032684326}
 --- !u!1 &1900530035
 GameObject:
   m_ObjectHideFlags: 0
