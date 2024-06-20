@@ -25370,10 +25370,8 @@ MonoBehaviour:
   - {fileID: 294108181}
   - {fileID: 165151945}
   - {fileID: 1338733353}
-  - {fileID: 0}
   - {fileID: 66283139}
   - {fileID: 117980084}
-  - {fileID: 0}
   - {fileID: 918327583}
   - {fileID: 1338443463}
   - {fileID: 503835326}
@@ -25381,11 +25379,8 @@ MonoBehaviour:
   - {fileID: 1717828669}
   - {fileID: 1260602966}
   PathNodes:
-  - {fileID: 0}
   - {fileID: 2729281214224612182}
   - {fileID: 2729281213191696912}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &2729281213105387550
 Transform:
   m_ObjectHideFlags: 0
