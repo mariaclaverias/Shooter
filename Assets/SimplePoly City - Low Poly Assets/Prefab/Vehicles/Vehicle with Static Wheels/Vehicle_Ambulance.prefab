@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
   - component: {fileID: 1648790519873536389}
+  - component: {fileID: 8134902029293148330}
   m_Layer: 0
   m_Name: Vehicle_Ambulance
   m_TagString: Untagged
@@ -103,5 +104,26 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.933593, y: 2.9494567, z: 6.808762}
-  m_Center: {x: -0.0010515451, y: 1.4745896, z: 0.052737713}
+  m_Size: {x: 2.933593, y: 2.9494567, z: 3.8161373}
+  m_Center: {x: -0.0010515451, y: 1.4745896, z: -1.1379519}
+--- !u!65 &8134902029293148330
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.933593, y: 1.5367326, z: 2.7540836}
+  m_Center: {x: -0.0010515451, y: 0.7682275, z: 2.0800772}
