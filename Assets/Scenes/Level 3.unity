@@ -26913,9 +26913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemiesToAssign:
   - {fileID: 376178894}
-  - {fileID: 0}
   - {fileID: 294108181}
-  - {fileID: 0}
   - {fileID: 1338733353}
   - {fileID: 66283139}
   - {fileID: 117980084}
@@ -27189,6 +27187,11 @@ PrefabInstance:
         type: 3}
       propertyPath: gravityDownForce
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2703355619797536407, guid: 761cdc9e4e883334cbdcea062d0befa7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3122855503829242450, guid: 761cdc9e4e883334cbdcea062d0befa7,
         type: 3}
